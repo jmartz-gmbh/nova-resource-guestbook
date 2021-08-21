@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\Boolean;
 
 class Guestbook extends Resource
 {
@@ -29,7 +30,7 @@ class Guestbook extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'name', 'email', 'message'
+        'id', 'name', 'email', 'message', 'active'
     ];
 
     /**
@@ -48,6 +49,9 @@ class Guestbook extends Resource
                 ->sortable()
                 ->required(),
             Text::make('message')
+                ->sortable()
+                ->required()
+            Boolean::make('active')
                 ->sortable()
                 ->required()
         ];
