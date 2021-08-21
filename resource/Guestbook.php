@@ -50,7 +50,7 @@ class Guestbook extends Resource
                 ->required(),
             Text::make('message')
                 ->sortable()
-                ->required()
+                ->required(),
             Boolean::make('active')
                 ->sortable()
                 ->required()
