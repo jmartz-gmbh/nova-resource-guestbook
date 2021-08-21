@@ -1,0 +1,23 @@
+{
+  "name": "jmartz-gmbh/nova-resource-guestbook",
+  "description": "Laravel Nova Resource Guestbook",
+  "license": "MIT",
+  "require": {
+    "php": "^7.3|^7.4",
+    "illuminate/http": "^8.0",
+    "jmartz-gmbh/laravel-model-guestbook": "dev-master"
+  },
+  "autoload": {
+    "classmap": [
+      "resource/"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Jonathan Martz",
+      "email": "composer@jmartz.de",
+      "homepage": "https://www.jmartz.de",
+      "role": "Developer"
+    }
+  ]
+}
